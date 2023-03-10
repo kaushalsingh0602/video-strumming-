@@ -1,0 +1,24 @@
+{
+  "name": "video-striming-wesite",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "video striming sebsite ",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb-memory-server": "^8.12.0",
+    "mongoose": "^7.0.1",
+    "node-rest-client": "^3.1.1",
+    "nodemon": "^2.0.21",
+    "supertest": "^6.3.3"
+  }
+}

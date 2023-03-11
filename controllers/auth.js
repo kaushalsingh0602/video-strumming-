@@ -2,7 +2,7 @@ const mongoose= require ("mongoose");
 const User=require ("../models/User");
 const bcrypt =require( "bcryptjs");
 const { createError } =require( "../error");
-const jwt =require=( "jsonwebtoken");
+const jwt =require( "jsonwebtoken");
 
 exports.signup = async (req, res, next) => {
   try {
@@ -26,7 +26,7 @@ exports.signin = async (req, res, next) => {
 
     if (!isCorrect) return next(createError(400, "Wrong Credentials!"));
 
-    const token = jwt.sign({ id: user._id }, process.env.JWT);
+    const token = jwt.sign({ id: user._id }, 'kaushal-singh');
     const { password, ...others } = user._doc;
 
     res
